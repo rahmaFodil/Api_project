@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Segoe UI Light;
+}
+body {
+  background-color: black;
+}
+.side-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  z-index: 55555555;
+  background-color: #f8f6f6;
+  text-align: center;
+  transition: all 1s ease;
+}
+.side-logo {
+  padding: 25px 0;
+}
+
+.side-logo img {
+  height: 48px;
+}
+.side-menu i > svg {
+  font-size: 40px;
+  font-weight: 600;
+}
+.close_icon {
+  display: none;
+}
+.social-icon > div {
+  padding-top: 10px;
+}
+.nav-bar-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  z-index: 5555;
+  background-color: #000;
+  transition: all 1s ease;
+}
+.nav-bar-menu ul {
+  padding-left: 30px;
+  height: auto;
+  list-style-type: none;
+}
+.nav-bar-menu li {
+  padding-top: 500px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+.nav-bar-menu ul li a {
+  color: #f9f6f6;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+.nav-bar-menu ul li a:hover,
+.nav-icons a:hover {
+  color: #ff655c;
+  transition: all 0.3s;
+}
+.nav-icons {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.nav-icons a {
+  color: #f9f6f6;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.nav-icons span {
+  color: #999;
+}
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.788);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 20px;
+  line-height: 1.5;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-align: center;
+}
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  color: #fff;
+}
+.error_msg {
+  display: none;
+}
+.show {
+  overflow: hidden;
+}
+.text-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: rgb(23, 22, 22);
+  font-weight: 600;
+  transition: all 1s;
+}
+.show:hover .text-layer {
+  top: 0;
+  transition: all 1s;
+}
+.post-title {
+  font-weight: 600;
+}
